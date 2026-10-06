@@ -6,19 +6,23 @@ error() {
 }
 
 upload_changes() {
-    git add index.html
-    if [[ $? -ne 0 ]]; then
-        error "Git add error"
-    fi
+    read -p "Upload changes to GitHub? [y/N]: " ANS
 
-    git commit -m "[update] $(date)"
-    if [[ $? -ne 0 ]]; then
-        error "Git commit error"
-    fi
+    if [[ "$ANS" == "y" ]] || [[ "$ANS" == "Y" ]]; then
+        git add index.html
+        if [[ $? -ne 0 ]]; then
+            error "Git add error"
+        fi
 
-    git push
-    if [[ $? -ne 0 ]]; then
-        error "Git push error"
+        git commit -m "[update] $(date)"
+        if [[ $? -ne 0 ]]; then
+            error "Git commit error"
+        fi
+
+        git push
+        if [[ $? -ne 0 ]]; then
+            error "Git push error"
+        fi
     fi
 }
 

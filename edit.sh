@@ -11,7 +11,12 @@ upload_changes() {
     if [[ "$ANS" == "y" ]] || [[ "$ANS" == "Y" ]]; then
         git add index.html
         if [[ $? -ne 0 ]]; then
-            error "Git add error"
+            error "Git add html error"
+        fi
+
+        git add notas.txt
+        if [[ $? -ne 0 ]]; then
+            error "Git add notes error"
         fi
 
         git commit -m "[update] $(date)"

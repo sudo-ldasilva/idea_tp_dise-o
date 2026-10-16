@@ -1,0 +1,100 @@
+# TP diseño
+
+tags: utn diseño tp
+
+---
+
+## Entrega 5
+
+### Correcciones Pasada entrega
+- [x] Direccion no embebida en Donaciones
+> solución embeberlo es un parche, pero no es una solu de diseño (si se repite dir, o escriben números separados o en minúscula o mayúsculas). Al tenerlo embebido, tiene repetido! Hay que normalizar (dirección)? Tener las direcciones repetidas en mayúsculas y otra en minúsculas.
+
+- [ ] bdd en documentos (no relacional) hay que diagramar según eso
+
+- [ ] Desnormalizar el progreso de la misión
+> ~tener un enum del tipo de misión~   hay overhead por recalcular progreso por todos los usuarios, hay que persistir el progreso, no calcularlo en tiempo real
+
+- [ ] poner nombre en dónde está desplegado en el diagrama de componentes
+
+- [ ] cambiar entrega/foto/uuid
+
+## Entrega 4
+
+- [-] Tests
+
+- [ ] Armar Script de pruebas con datos para testear el sistema
+
+- [x] Implementar Broker
+
+- [-] Justificación del diagrama de arquitectura / Explicación del TP
+
+- [?] (LEO) Agregar que en la laptop no funciona el end point de generación de rutas desde bruno. Fijarse lo de HHTTP 1.1
+
+- [ ] Reescribir end-point PUT /donaciones/independientes/{uuid}/estado ** Re-escribirlo o Re-pensarlo
+
+- [x] Arreglar importación de CSV
+
+- [x] Base de Datos en la Nube
+
+- [x] Relación hibernate
+
+- [x] Agregar en "Justificaciones de Diseño" el uso de Mongo DB
+
+- [x] Hostear n8n
+
+- [x] Actualizar DER
+    - Incentivos: <https://discord.com/channels/1494698859509579878/1494698860118020310/1557127201449709590>
+    - Logística: <https://discord.com/channels/1494698859509579878/1494698860118020310/1557127358413021264>
+    - Notificaciones: Ahora tiene que contemplar ContactoDeNotificacion y Contacto
+    - Donaciones: <https://discord.com/channels/1494698859509579878/1494698860118020310/1557130610672144478>
+
+- [-] Exception handler
+    - [x] Donaciones
+    - [x] Incentivos
+    - [x] Logística
+    - [ ] Notificaciones
+
+- [-] Implementar Cola de mensajes
+
+    - [x] Hacer que todos los servicios implementen (en la interfaz) un método para ver si realmente se pudo enviar el mensaje
+    - [ ] Testing
+
+- [x] Mover Gestores a la carpeta de servicio
+
+- [x] Separar en paquetes
+
+- [x] Cambiar el Bien de la NecesidadIndividual por la Subcategoria
+
+- [x] Modificar lo de Peso y Volumen
+
+- [x] Cambiar infobip por texbee?
+   - [Texbee](https://textbee.dev/)
+
+- [x] El PUT Entidades beneficiarias está mal?
+
+- [x] Del ultimo refactor: Ahora todo funciona pero hay que reemplazar los throws Exception a throws RuntimeException
+
+- [x] Incentivos no termina de ser totalmente independiente. Cuando hago donante.getDonaciones() hace el pedido directo a Donaciones. Necesitamos cachearlo
+
+- [~] Exception en cron task
+> Donación independiente tiene validaciones en su constructor, el tema es que cuando el scheduler llama a segmentarDonaciones(), la excepción debería burbujear hasta el scheduler, el tema es que ahí no podríamos devolver un código http xq no hay ninguna petición. Entonces pensamos que el servicio de donaciones notifique si hay un error al administrador (no debería de pasar, pero bueno), o sino sacarle las validaciones a DonacionIndependiente (pero existiría un posible riesgo de seguridad creo)
+>
+> Con el ranking pasa lo mismo, el algoritmo "puede fallar" en la creación del ranking xq tiene validaciones su constructor. Para que lance la excepción tendría q poner un try/catch en un map, pero para mi queda horrible, entonces no se si ponerlo o si
+
+## Info
+- [SWAGGER](http://localhost:8080/swagger-ui/index.html)
+- Puertos:
+    - Donaciones: 8080
+    - Incentivos: 8082
+    - Notificaciones: 8081
+    - Logística: 8083
+
+## Orden de ejecución de tests de Bruno:
+1. Categoria
+2. Don Juridico
+3. Donacion
+4. Segmentate
+5. Entidad beneficiaria
+6. Necesidad extraordinaria
+7. Asignacion | Ranking

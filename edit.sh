@@ -28,6 +28,7 @@ upload_changes() {
 
 generate_html() {
     idea html index.html tp_diseño
+    idea notes_print tp_diseño > notas.txt
     if [[ $? -ne 0 ]]; then
         error "Unable to generate the HTML"
     fi

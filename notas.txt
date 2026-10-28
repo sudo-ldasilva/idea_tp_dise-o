@@ -91,7 +91,10 @@ tags: utn diseño tp
     - Logística: 8083
 
 ## Orden de ejecución de tests de Bruno:
+0. Cargar en la BD Ciudades
 1. Categoria
+2. Subcategoria
+2. Bien
 2. Don Juridico
 3. Donacion
 4. Segmentate

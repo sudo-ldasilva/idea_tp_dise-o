@@ -7,6 +7,8 @@ tags: utn diseño tp
 ## Entrega 5
 
 ### Correcciones Pasada entrega
+- [ ] En todas las clases con borrado lógico hay que fijarse que no estén activas al momento de crear o editar el objeto. Ya que si está eliminado, debo poder crear otra Entidad Beneficiaria con el mismo telefono, por ejemplo.
+
 - [x] Direccion no embebida en Donaciones
 > solución embeberlo es un parche, pero no es una solu de diseño (si se repite dir, o escriben números separados o en minúscula o mayúsculas). Al tenerlo embebido, tiene repetido! Hay que normalizar (dirección)? Tener las direcciones repetidas en mayúsculas y otra en minúsculas.
 
@@ -18,6 +20,8 @@ tags: utn diseño tp
 - [ ] poner nombre en dónde está desplegado en el diagrama de componentes
 
 - [ ] cambiar entrega/foto/uuid
+
+- [ ] Error Handler en incentivos
 
 ## Entrega 4
 

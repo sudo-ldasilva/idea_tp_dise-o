@@ -7,6 +7,7 @@ tags: utn diseño tp
 ## Entrega 5
 
 - [ ] El DTO de Entidad Benficiaria tiene "id" en vez de "uuid"
+- [ ] Pasar Nominatim a Donaciones
 
 ### Correcciones Pasada entrega
 - [ ] En todas las clases con borrado lógico hay que fijarse que no estén activas al momento de crear o editar el objeto. Ya que si está eliminado, debo poder crear otra Entidad Beneficiaria con el mismo telefono, por ejemplo.

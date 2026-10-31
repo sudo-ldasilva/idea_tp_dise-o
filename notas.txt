@@ -8,6 +8,8 @@ tags: utn diseño tp
 
 - [ ] El DTO de Entidad Benficiaria tiene "id" en vez de "uuid"
 - [ ] Pasar Nominatim a Donaciones
+- [ ] Si Valhalla falla, se ordena como estaba la lista originalmente, NO tiene que fallar todo el proceso
+- [ ] Cambiar los getUUID por getUuid para que Spring Boot no sea un llorón
 
 ### Correcciones Pasada entrega
 - [ ] En todas las clases con borrado lógico hay que fijarse que no estén activas al momento de crear o editar el objeto. Ya que si está eliminado, debo poder crear otra Entidad Beneficiaria con el mismo telefono, por ejemplo.

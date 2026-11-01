@@ -6,13 +6,13 @@ tags: utn diseño tp
 
 ## Entrega 5
 
-- [ ] El DTO de Entidad Benficiaria tiene "id" en vez de "uuid"
-- [ ] Pasar Nominatim a Donaciones
-- [ ] Si Valhalla falla, se ordena como estaba la lista originalmente, NO tiene que fallar todo el proceso
-- [ ] Cambiar los getUUID por getUuid para que Spring Boot no sea un llorón
+- [~] El DTO de Entidad Benficiaria tiene "id" en vez de "uuid"
+- [x] Pasar Nominatim a Donaciones
+- [x] Si Valhalla falla, se ordena como estaba la lista originalmente, NO tiene que fallar todo el proceso
+- [x] Cambiar los getUUID por getUuid para que Spring Boot no sea un llorón
 
 ### Correcciones Pasada entrega
-- [ ] En todas las clases con borrado lógico hay que fijarse que no estén activas al momento de crear o editar el objeto. Ya que si está eliminado, debo poder crear otra Entidad Beneficiaria con el mismo telefono, por ejemplo.
+- [-] En todas las clases con borrado lógico hay que fijarse que no estén activas al momento de crear o editar el objeto. Ya que si está eliminado, debo poder crear otra Entidad Beneficiaria con el mismo telefono, por ejemplo.
 
 - [x] Direccion no embebida en Donaciones
 > solución embeberlo es un parche, pero no es una solu de diseño (si se repite dir, o escriben números separados o en minúscula o mayúsculas). Al tenerlo embebido, tiene repetido! Hay que normalizar (dirección)? Tener las direcciones repetidas en mayúsculas y otra en minúsculas.

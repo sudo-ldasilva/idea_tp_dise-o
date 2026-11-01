@@ -10,6 +10,8 @@ tags: utn diseño tp
 - [x] Pasar Nominatim a Donaciones
 - [x] Si Valhalla falla, se ordena como estaba la lista originalmente, NO tiene que fallar todo el proceso
 - [x] Cambiar los getUUID por getUuid para que Spring Boot no sea un llorón
+- [ ] En script: Agregar campos a Segmentacion
+- [ ] En script: Agregar un botón de GET al primer elemento que pueda obtener (y obtener su uuid / id para las consultas futuras)
 
 ### Correcciones Pasada entrega
 - [-] En todas las clases con borrado lógico hay que fijarse que no estén activas al momento de crear o editar el objeto. Ya que si está eliminado, debo poder crear otra Entidad Beneficiaria con el mismo telefono, por ejemplo.

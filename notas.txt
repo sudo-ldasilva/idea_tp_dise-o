@@ -10,33 +10,32 @@ tags: utn diseño tp
 - [x] Pasar Nominatim a Donaciones
 - [x] Si Valhalla falla, se ordena como estaba la lista originalmente, NO tiene que fallar todo el proceso
 - [x] Cambiar los getUUID por getUuid para que Spring Boot no sea un llorón
-- [ ] En script: Agregar campos a Segmentacion
-- [ ] En script: Agregar un botón de GET al primer elemento que pueda obtener (y obtener su uuid / id para las consultas futuras)
+- [x] En script: Agregar campos a Segmentacion
+- [x] En script: Agregar un botón de GET al primer elemento que pueda obtener (y obtener su uuid / id para las consultas futuras)
 - [ ] Probar el back hasta que caiga
-- [ ] Hacer un parámetro en donaciones para que no se contacto con incentivos y logistica para las pruebas
+- [ ] Hacer un parámetro en donaciones para que no se contacte con incentivos y logistica para las pruebas
 
 ### Correcciones Pasada entrega
 - [-] En todas las clases con borrado lógico hay que fijarse que no estén activas al momento de crear o editar el objeto. Ya que si está eliminado, debo poder crear otra Entidad Beneficiaria con el mismo telefono, por ejemplo.
+> Hecho, hay que checkear
 
 - [x] Direccion no embebida en Donaciones
 > solución embeberlo es un parche, pero no es una solu de diseño (si se repite dir, o escriben números separados o en minúscula o mayúsculas). Al tenerlo embebido, tiene repetido! Hay que normalizar (dirección)? Tener las direcciones repetidas en mayúsculas y otra en minúsculas.
 
-- [ ] bdd en documentos (no relacional) hay que diagramar según eso
+- [x] bdd en documentos (no relacional) hay que diagramar según eso
 
 - [ ] Desnormalizar el progreso de la misión
 > ~tener un enum del tipo de misión~   hay overhead por recalcular progreso por todos los usuarios, hay que persistir el progreso, no calcularlo en tiempo real
 
-- [ ] poner nombre en dónde está desplegado en el diagrama de componentes
+- [x] poner nombre en dónde está desplegado en el diagrama de componentes
 
 - [ ] cambiar entrega/foto/uuid
-
-- [ ] Error Handler en incentivos
 
 ## Entrega 4
 
 - [-] Tests
 
-- [ ] Armar Script de pruebas con datos para testear el sistema
+- [x] Armar Script de pruebas con datos para testear el sistema
 
 - [x] Implementar Broker
 
@@ -66,7 +65,7 @@ tags: utn diseño tp
     - [x] Donaciones
     - [x] Incentivos
     - [x] Logística
-    - [ ] Notificaciones
+    - [~] Notificaciones
 
 - [-] Implementar Cola de mensajes
 

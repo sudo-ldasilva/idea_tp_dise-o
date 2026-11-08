@@ -6,27 +6,27 @@ tags: utn diseño tp
 
 ## Entrega 5
 
-- [ ] El DTO de Entidad Benficiaria DTO tiene "id" en vez de "uuid"
+- [x] El DTO de Entidad Benficiaria DTO tiene "id" en vez de "uuid"
 - [x] Pasar Nominatim a Donaciones
 - [x] Si Valhalla falla, se ordena como estaba la lista originalmente, NO tiene que fallar todo el proceso
 - [x] Cambiar los getUUID por getUuid para que Spring Boot no sea un llorón
 - [x] En script: Agregar campos a Segmentacion
 - [x] En script: Agregar un botón de GET al primer elemento que pueda obtener (y obtener su uuid / id para las consultas futuras)
-- [ ] Hacer un parámetro en donaciones para que no se contacte con incentivos y logistica para las pruebas
+- [~] Hacer un parámetro en donaciones para que no se contacte con incentivos y logistica para las pruebas
 
 - [-] Testear cola de notificaciones en gran volumen
     - [ ] Probar que SMS funcione correctamente
     - [ ] Probar que WPP funcione correctamente
 
-- [ ] ¿Implementar exception handler en Notificaciones? Creo que no haría falta pq el POST no falla, ocurren fallos internos... Pero igual habría que ver cómo manejar esos casos donde se tiran excepciones (o sea catchearlas en el código)
+- [x] ¿Implementar exception handler en Notificaciones? Creo que no haría falta pq el POST no falla, ocurren fallos internos... Pero igual habría que ver cómo manejar esos casos donde se tiran excepciones (o sea catchearlas en el código)
 - [x] El end-point de cambio de estado de donaciones independientes no permite ingresar justificacion en caso de ser ENTREGA_FALLIDA.
 - [ ] Probar el back hasta que caiga
 
 - [x] Tenemos que agregar el caso extra al strategy, que nos corrigió woody
-- [ ] Solucionar end point post camiones. Que no tira error si ya existe
+- [x] Solucionar end point post camiones. Que no tira error si ya existe
 - [ ] Crear nuevo n8n
-- [ ] Una notificacion de entrega fallida si o si debe tener una justificacion, tenemos que ver de como verificar en logistica que no sea null
-- [ ] Revisar test incentivosCaidoNoDejaDonacionSegmentadaEnBD()
+- [x] Una notificacion de entrega fallida si o si debe tener una justificacion, tenemos que ver de como verificar en logistica que no sea null
+- [x] Revisar test incentivosCaidoNoDejaDonacionSegmentadaEnBD()
 - [ ] Probar back-end en al nube por completo, y su interacción con los demás servicios
 
 ### Correcciones Pasada entrega

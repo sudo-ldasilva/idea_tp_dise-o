@@ -24,6 +24,7 @@ tags: utn diseño tp
 
 - [x] Tenemos que agregar el caso extra al strategy, que nos corrigió woody
 - [ ] Solucionar end point post camiones. Que no tira error si ya existe
+- [ ] Crear nuevo n8n
 
 ### Correcciones Pasada entrega
 - [-] En todas las clases con borrado lógico hay que fijarse que no estén activas al momento de crear o editar el objeto. Ya que si está eliminado, debo poder crear otra Entidad Beneficiaria con el mismo telefono, por ejemplo.

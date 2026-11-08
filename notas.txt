@@ -27,6 +27,7 @@ tags: utn diseño tp
 - [ ] Crear nuevo n8n
 - [ ] Una notificacion de entrega fallida si o si debe tener una justificacion, tenemos que ver de como verificar en logistica que no sea null
 - [ ] Revisar test incentivosCaidoNoDejaDonacionSegmentadaEnBD()
+- [ ] Probar back-end en al nube por completo, y su interacción con los demás servicios
 
 ### Correcciones Pasada entrega
 - [-] En todas las clases con borrado lógico hay que fijarse que no estén activas al momento de crear o editar el objeto. Ya que si está eliminado, debo poder crear otra Entidad Beneficiaria con el mismo telefono, por ejemplo.

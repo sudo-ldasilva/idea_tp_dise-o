@@ -12,9 +12,18 @@ tags: utn diseño tp
 - [x] Cambiar los getUUID por getUuid para que Spring Boot no sea un llorón
 - [x] En script: Agregar campos a Segmentacion
 - [x] En script: Agregar un botón de GET al primer elemento que pueda obtener (y obtener su uuid / id para las consultas futuras)
-- [ ] Probar el back hasta que caiga
 - [ ] Hacer un parámetro en donaciones para que no se contacte con incentivos y logistica para las pruebas
 
+- [-] Testear cola de notificaciones en gran volumen
+    - [ ] Probar que SMS funcione correctamente
+    - [ ] Probar que WPP funcione correctamente
+
+- [ ] ¿Implementar exception handler en Notificaciones? Creo que no haría falta pq el POST no falla, ocurren fallos internos... Pero igual habría que ver cómo manejar esos casos donde se tiran excepciones (o sea catchearlas en el código)
+- [x] El end-point de cambio de estado de donaciones independientes no permite ingresar justificacion en caso de ser ENTREGA_FALLIDA.
+- [ ] Probar el back hasta que caiga
+
+- [ ] Tenemos que agregar el caso extra al strategy, que nos corrigió woody
+- [ ] Solucionar end point post camiones. Que no tira error si ya existe
 ### Correcciones Pasada entrega
 - [-] En todas las clases con borrado lógico hay que fijarse que no estén activas al momento de crear o editar el objeto. Ya que si está eliminado, debo poder crear otra Entidad Beneficiaria con el mismo telefono, por ejemplo.
 > Hecho, hay que checkear
@@ -29,7 +38,7 @@ tags: utn diseño tp
 
 - [x] poner nombre en dónde está desplegado en el diagrama de componentes
 
-- [ ] cambiar entrega/foto/uuid
+- [x] cambiar entrega/foto/uuid
 
 ## Entrega 4
 
@@ -43,7 +52,7 @@ tags: utn diseño tp
 
 - [?] (LEO) Agregar que en la laptop no funciona el end point de generación de rutas desde bruno. Fijarse lo de HHTTP 1.1
 
-- [ ] Reescribir end-point PUT /donaciones/independientes/{uuid}/estado ** Re-escribirlo o Re-pensarlo
+- [x] Reescribir end-point PUT /donaciones/independientes/{uuid}/estado ** Re-escribirlo o Re-pensarlo
 
 - [x] Arreglar importación de CSV
 

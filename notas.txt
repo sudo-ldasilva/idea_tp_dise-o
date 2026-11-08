@@ -37,7 +37,7 @@ tags: utn diseño tp
 
 - [x] bdd en documentos (no relacional) hay que diagramar según eso
 
-- [ ] Desnormalizar el progreso de la misión
+- [x] Desnormalizar el progreso de la misión
 > ~tener un enum del tipo de misión~   hay overhead por recalcular progreso por todos los usuarios, hay que persistir el progreso, no calcularlo en tiempo real
 
 - [x] poner nombre en dónde está desplegado en el diagrama de componentes
@@ -46,15 +46,15 @@ tags: utn diseño tp
 
 ## Entrega 4
 
-- [-] Tests
+- [~] Tests
 
 - [x] Armar Script de pruebas con datos para testear el sistema
 
 - [x] Implementar Broker
 
-- [-] Justificación del diagrama de arquitectura / Explicación del TP
+- [x] Justificación del diagrama de arquitectura / Explicación del TP
 
-- [?] (LEO) Agregar que en la laptop no funciona el end point de generación de rutas desde bruno. Fijarse lo de HHTTP 1.1
+- [~] (LEO) Agregar que en la laptop no funciona el end point de generación de rutas desde bruno. Fijarse lo de HHTTP 1.1
 
 - [x] Reescribir end-point PUT /donaciones/independientes/{uuid}/estado ** Re-escribirlo o Re-pensarlo
 
@@ -74,16 +74,16 @@ tags: utn diseño tp
     - Notificaciones: Ahora tiene que contemplar ContactoDeNotificacion y Contacto
     - Donaciones: <https://discord.com/channels/1494698859509579878/1494698860118020310/1557130610672144478>
 
-- [-] Exception handler
+- [x] Exception handler
     - [x] Donaciones
     - [x] Incentivos
     - [x] Logística
     - [~] Notificaciones
 
-- [-] Implementar Cola de mensajes
+- [x] Implementar Cola de mensajes
 
     - [x] Hacer que todos los servicios implementen (en la interfaz) un método para ver si realmente se pudo enviar el mensaje
-    - [ ] Testing
+    - [x] Testing
 
 - [x] Mover Gestores a la carpeta de servicio
 

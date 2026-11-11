@@ -16,20 +16,21 @@ tags: utn diseño tp
 
 - [-] Testear cola de notificaciones en gran volumen
     - [ ] Probar que SMS funcione correctamente
-    - [ ] Probar que WPP funcione correctamente
+    - [x] Probar que WPP funcione correctamente
+> WPP Tiene templates, no mensajes específicos
 
 - [x] ¿Implementar exception handler en Notificaciones? Creo que no haría falta pq el POST no falla, ocurren fallos internos... Pero igual habría que ver cómo manejar esos casos donde se tiran excepciones (o sea catchearlas en el código)
 - [x] El end-point de cambio de estado de donaciones independientes no permite ingresar justificacion en caso de ser ENTREGA_FALLIDA.
-- [ ] Probar el back hasta que caiga
 
 - [x] Tenemos que agregar el caso extra al strategy, que nos corrigió woody
 - [x] Solucionar end point post camiones. Que no tira error si ya existe
 - [ ] Crear nuevo n8n
 - [x] Una notificacion de entrega fallida si o si debe tener una justificacion, tenemos que ver de como verificar en logistica que no sea null
 - [x] Revisar test incentivosCaidoNoDejaDonacionSegmentadaEnBD()
+- [ ] Probar el back hasta que caiga
 - [ ] Probar back-end en al nube por completo, y su interacción con los demás servicios
 
-- [ ] Cuando nominatim falla, que burbujee la exception al end-point de "crear Donante" o "crear Entidad Beneficiaria"
+- [x] Cuando nominatim falla, que burbujee la exception al end-point de "crear Donante" o "crear Entidad Beneficiaria"
 - [ ] Probar la comunicación indentivos-n8n
 
 ### Correcciones Pasada entrega

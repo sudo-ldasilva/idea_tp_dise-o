@@ -51,6 +51,11 @@ Administrador:
 - [ ] Probar el back hasta que caiga
 - [ ] Probar back-end en al nube por completo, y su interacción con los demás servicios
 
+- [ ] Probar más de un servicio de logística corriendo
+- [ ] Probar más de una donación por necesidad
+- [x] La asignacion no checkea si la donacion ya está asignada
+- [ ] Incentivos debe recibir (y guardar) como atributo del Donante un atributo "nombre" (que en el caso de PersonaHumana es nombreYApellido y PersonaJuridica es razonSocial) que luego se envia a n8n. Tambien hay que implementar que cada cambio en Donaciones de un Donante se envíe a incentivos
+
 - [x] Cuando nominatim falla, que burbujee la exception al end-point de "crear Donante" o "crear Entidad Beneficiaria"
 - [ ] Probar la comunicación incentivos-n8n
 

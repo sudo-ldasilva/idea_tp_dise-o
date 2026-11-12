@@ -3,6 +3,27 @@
 tags: utn diseño tp
 
 ---
+## Endpoints faltantes para que el front consuma al back:
+Acceso:
+  - [ ] Donaciones del ultimo mes que tengan imagenes
+  - [ ] Depositos de donaciones anteriores
+
+Donante (ver como aplicar el filtro del donante en cada endpoint segun como se maneje con autenticacion):
+  - [ ] Donaciones independientes (mostrar los bienes incluidos y la cantidad) del donante pudiendo filtrar por estado, categoria y subcategoria, y con paginacion
+  - [ ] Rutas de las entregas activas
+  - [ ] Categoria de incentivos e insignias (GET del donante)
+  - [ ] Notificaciones del donante (poder filtrar por si fueron leidas o no)
+  - [ ] Marcar todas las notificaciones como leidas? (o lo maneja el front?)
+
+Entidad (ver lo mismo de autenticacion que el donante):
+  - [ ] Implementar paginacion en el GET de las necesidades individuales
+  - [ ] Ver las donaciones que se le fueron asignadas (tambien con paginacion)
+  - [ ] Rutas de las entregas activas
+  - [ ] Ver sus entregas que estan en estado "en traslado"? (para marcarlas como exitosa o fallida)
+
+Administrador:
+  - [ ] Bienes en deposito ("En deposito", "Asignacion realizada" y "Vencida") con paginacion
+  - [ ] Donaciones independientes "en deposito"
 
 ## Entrega 5
 
@@ -31,7 +52,7 @@ tags: utn diseño tp
 - [ ] Probar back-end en al nube por completo, y su interacción con los demás servicios
 
 - [x] Cuando nominatim falla, que burbujee la exception al end-point de "crear Donante" o "crear Entidad Beneficiaria"
-- [ ] Probar la comunicación indentivos-n8n
+- [ ] Probar la comunicación incentivos-n8n
 
 ### Correcciones Pasada entrega
 - [-] En todas las clases con borrado lógico hay que fijarse que no estén activas al momento de crear o editar el objeto. Ya que si está eliminado, debo poder crear otra Entidad Beneficiaria con el mismo telefono, por ejemplo.

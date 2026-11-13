@@ -59,6 +59,8 @@ Administrador:
 - [x] Cuando nominatim falla, que burbujee la exception al end-point de "crear Donante" o "crear Entidad Beneficiaria"
 - [x] Probar la comunicación incentivos-n8n
 
+- [ ] Si no hay donaciones asignadas ese dia, cuando se envía la ruta a logística, eliminar la linea que salía de la función y eliminar los tests que fallan
+
 ### Correcciones Pasada entrega
 - [-] En todas las clases con borrado lógico hay que fijarse que no estén activas al momento de crear o editar el objeto. Ya que si está eliminado, debo poder crear otra Entidad Beneficiaria con el mismo telefono, por ejemplo.
 > Hecho, hay que checkear

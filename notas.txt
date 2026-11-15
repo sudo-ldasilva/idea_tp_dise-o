@@ -147,6 +147,8 @@ Administrador:
     - Incentivos: 8082
     - Notificaciones: 8081
     - Logística: 8083
+    - Frontend: 8084
+    - Autenticación: 8085
 
 ## Orden de ejecución de tests de Bruno:
 1. Categoria

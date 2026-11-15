@@ -3,6 +3,24 @@
 tags: utn diseño tp
 
 ---
+
+## Entrega 6
+
+- [ ] agregar etiquetas con <> de cada componente. Ejemplo <external> <service> <bd> <externo>
+- [ ] ..Notificaciones no debería estar conectado con el front?
+- [ ] calendario como despegar?
+- [ ] que lo del bien del admin sea otra cosa porque si hay muchos bienes es muy largo, usar otro tipo de cajitas
+- [ ] que el selector de fechas en la de vencimiento te diga automáticamente un ejemplo después de ingresar la de ingreso
+- [ ] en el chofer de rutas sea diferente el de marcar a los round buttons? algo más cómodo para el celu. Probar lo de sacar foto y que se pueda subir a algún lado
+- [ ] en el teléfono poner código del país (cajita con la bandera y el +número?) o código de área
+- [ ] si se ingresa un registrar donante, no se borre todo, te marque lo que está mal
+- [ ] cuando se cargue csv, la vista previa vaya cambiando lo nuevo así se nota que está haciendo algo y no se trabó
+- [ ] tener otra alternativa además de social login con google
+
+- [ ] Autenticacion: completar el diagrama de arquitectura
+- [ ] Autenticacion: necesitamos diagrama de clase
+- [ ] Autenticacion: que todos puedan probar autenticación
+
 ## Endpoints faltantes para que el front consuma al back:
 Acceso:
   - [ ] Donaciones del ultimo mes que tengan imagenes

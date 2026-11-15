@@ -150,6 +150,14 @@ Administrador:
     - Frontend: 8084
     - Autenticación: 8085
 
+- Deploy:
+    - Donaciones: https://ddsi-k3002-g6-2026-donaciones.onrender.com
+    - Incentivos: https://ddsi-k3002-g6-2026-incentivos.onrender.com
+    - Notificaciones: https://ddsi-k3002-g6-2026-notificaciones.onrender.com
+    - Logística: https://ddsi-k3002-g6-2026-logistica.onrender.com
+    - Frontend: https://ddsi-k3002-g6-2026-frontend.onrender.com
+    - Autenticación: https://ddsi-k3002-g6-2026-autenticacion.onrender.com
+
 ## Orden de ejecución de tests de Bruno:
 1. Categoria
 2. Subcategoria

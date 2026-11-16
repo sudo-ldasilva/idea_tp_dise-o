@@ -63,10 +63,10 @@ Administrador:
 
 - [x] Tenemos que agregar el caso extra al strategy, que nos corrigió woody
 - [x] Solucionar end point post camiones. Que no tira error si ya existe
-- [ ] Crear nuevo n8n
+- [x] Crear nuevo n8n
 - [x] Una notificacion de entrega fallida si o si debe tener una justificacion, tenemos que ver de como verificar en logistica que no sea null
 - [x] Revisar test incentivosCaidoNoDejaDonacionSegmentadaEnBD()
-- [ ] Probar el back hasta que caiga
+- [x] Probar el back hasta que caiga
 - [ ] Probar back-end en al nube por completo, y su interacción con los demás servicios
 
 - [ ] Probar más de un servicio de logística corriendo
@@ -77,7 +77,7 @@ Administrador:
 - [x] Cuando nominatim falla, que burbujee la exception al end-point de "crear Donante" o "crear Entidad Beneficiaria"
 - [x] Probar la comunicación incentivos-n8n
 
-- [ ] Si no hay donaciones asignadas ese dia, cuando se envía la ruta a logística, eliminar la linea que salía de la función y eliminar los tests que fallan
+- [x] Si no hay donaciones asignadas ese dia, cuando se envía la ruta a logística, eliminar la linea que salía de la función y eliminar los tests que fallan
 
 ### Correcciones Pasada entrega
 - [-] En todas las clases con borrado lógico hay que fijarse que no estén activas al momento de crear o editar el objeto. Ya que si está eliminado, debo poder crear otra Entidad Beneficiaria con el mismo telefono, por ejemplo.
